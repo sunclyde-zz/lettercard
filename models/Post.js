@@ -21,6 +21,7 @@ Post.add({
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 	},
+	custom: { type: String, required: false },
 	categories: { type: Types.Relationship, ref: 'PostCategory', many: true },
 });
 

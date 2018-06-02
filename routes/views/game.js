@@ -22,17 +22,13 @@ exports = module.exports = function (req, res) {
 
 
 		q.exec(function (err, result) {
-			console.error(result.content.extended);
-			/*
-			var settings = JSON.parse(result.content.extended);
+			var settings = JSON.parse(result.custom);
 			for (var name in settings) {
 				var preference = {};
 				preference.name = name;
-				preference.value = preference[name];
-				preferences.add(preference);
+				preference.value = settings[name];
+				locals.data.preferences.push(preference);
 			}
-			locals.data.preferences = preferences;
-			*/
 			next(err);
 		});
 

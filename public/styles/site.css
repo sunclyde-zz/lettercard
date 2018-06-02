@@ -5834,3 +5834,9 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.pref_name, .pref_value {
+  padding: 4px; }
+
+.pref_name {
+  color: blueviolet; }

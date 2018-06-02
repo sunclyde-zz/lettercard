@@ -2,7 +2,9 @@
 	<h1>Game</h1>
 </div>
 <div class="container">
+	<ul>
 	{{#each data.preferences}}
-		<li>a</li>
+		<li><span class="pref_name">{{name}}</span><span class="pref_value">{{value}}</span></li>
 	{{/each}}
+	</ul>
 </div>
